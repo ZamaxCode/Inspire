@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/test', function () {
+    return view('inspire.crear_post');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
