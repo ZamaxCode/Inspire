@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="layout/img/favicon.ico">
+    <script src="https://kit.fontawesome.com/3523f05d7f.js" crossorigin="anonymous"></script>
 
     <!-- CSS here -->
     <link rel="stylesheet" href="layout/css/bootstrap.min.css">
@@ -112,7 +113,7 @@
                                 <!-- social -->
                                 <div class="footer-social">
                                     <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                                     <a href="#"><i class="fab fa-pinterest-p"></i></a>
                                 </div>
                             </div>

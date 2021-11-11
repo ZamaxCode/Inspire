@@ -1,5 +1,4 @@
 <x-inspire-layout>
-
     <section class="slider-area slider-area2">  
         <div class="slider-active">
             <!-- Single Slider -->
@@ -12,7 +11,7 @@
                                 <!-- breadcrumb Start-->
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
                                         <li class="breadcrumb-item"><a href="#">Crear</a></li> 
                                     </ol>
                                 </nav>
@@ -24,13 +23,15 @@
             </div>
         </div>
     </section>
-    
+
     <div class="services-area services-area2 section-padding40">
         <div class="container">
-            <!-- Put your content here -->
-            <h1>Datos:</h1>
-            <!-- End content -->
+            <h1>Publicaciones</h1>
+            <a href="{{ route('publicacion.create') }}" class="genric-btn primary-border circle arrow">
+                ¡Publica algo!
+                <span class="lnr lnr-arrow-right"></span>
+            </a>
         </div>
     </div>
-            
+
 </x-inspire-layout>

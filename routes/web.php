@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PublicacionController;
+use App\Models\Publicacion;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,13 +15,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/test', function () {
-    return view('inspire.crear_post');
-});
+
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/test', function () {
+    return view('inspire/publicacion_create');
+});
+
+Route::resource('publicacion', PublicacionController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
