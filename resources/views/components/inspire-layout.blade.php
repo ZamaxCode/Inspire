@@ -11,20 +11,20 @@
     <script src="https://kit.fontawesome.com/3523f05d7f.js" crossorigin="anonymous"></script>
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="layout/css/bootstrap.min.css">
-    <link rel="stylesheet" href="layout/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="layout/css/slicknav.css">
-    <link rel="stylesheet" href="layout/css/flaticon.css">
-    <link rel="stylesheet" href="layout/css/progressbar_barfiller.css">
-    <link rel="stylesheet" href="layout/css/gijgo.css">
-    <link rel="stylesheet" href="layout/css/animate.min.css">
-    <link rel="stylesheet" href="layout/css/animated-headline.css">
-    <link rel="stylesheet" href="layout/css/magnific-popup.css">
-    <link rel="stylesheet" href="layout/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="layout/css/themify-icons.css">
-    <link rel="stylesheet" href="layout/css/slick.css">
-    <link rel="stylesheet" href="layout/css/nice-select.css">
-    <link rel="stylesheet" href="layout/css/style.css">
+    <link rel="stylesheet" href="{{asset('layout/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/slicknav.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/progressbar_barfiller.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/gijgo.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/animated-headline.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/fontawesome-all.min.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/themify-icons.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/nice-select.css')}}">
+    <link rel="stylesheet" href="{{asset('layout/css/style.css')}}">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="layout/img/logo/loder.png" alt="">
+                    <img src="{{asset('layout/img/logo/loder.png')}}" alt="">
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="index.html"><img src="layout/img/logo/logo.png" alt=""></a>
+                                <a href="index.html"><img src="{{asset('layout/img/logo/logo.png')}}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10">
@@ -116,7 +116,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo mb-25">
-                                    <a href="index.html"><img src="layout/img/logo/logo2_footer.png" alt=""></a>
+                                    <a href="index.html"><img src="{{asset('layout/img/logo/logo2_footer.png')}}" alt=""></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -202,46 +202,46 @@
 </div>
 
 <!-- JS here -->
-<script src="layout/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="{{asset('layout/js/vendor/modernizr-3.5.0.min.js')}}"></script>
 <!-- Jquery, Popper, Bootstrap -->
-<script src="layout/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="layout/js/popper.min.js"></script>
-<script src="layout/js/bootstrap.min.js"></script>
+<script src="{{asset('layout/js/vendor/jquery-1.12.4.min.js')}}"></script>
+<script src="{{asset('layout/js/popper.min.js')}}"></script>
+<script src="{{asset('layout/js/bootstrap.min.js')}}"></script>
 <!-- Jquery Mobile Menu -->
-<script src="layout/js/jquery.slicknav.min.js"></script>
+<script src="{{asset('layout/js/jquery.slicknav.min.js')}}"></script>
 
 <!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="layout/js/owl.carousel.min.js"></script>
-<script src="layout/js/slick.min.js"></script>
+<script src="{{asset('layout/js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('layout/js/slick.min.js')}}"></script>
 <!-- One Page, Animated-HeadLin -->
-<script src="layout/js/wow.min.js"></script>
-<script src="layout/js/animated.headline.js"></script>
-<script src="layout/js/jquery.magnific-popup.js"></script>
+<script src="{{asset('layout/js/wow.min.js')}}"></script>
+<script src="{{asset('layout/js/animated.headline.js')}}"></script>
+<script src="{{asset('layout/js/jquery.magnific-popup.js')}}"></script>
 
 <!-- Date Picker -->
-<script src="layout/js/gijgo.min.js"></script>
+<script src="{{asset('layout/js/gijgo.min.js')}}"></script>
 <!-- Nice-select, sticky -->
-<script src="layout/js/jquery.nice-select.min.js"></script>
-<script src="layout/js/jquery.sticky.js"></script>
+<script src="{{asset('layout/js/jquery.nice-select.min.js')}}"></script>
+<script src="{{asset('layout/js/jquery.sticky.js')}}"></script>
 <!-- Progress -->
-<script src="layout/js/jquery.barfiller.js"></script>
+<script src="{{asset('layout/js/jquery.barfiller.js')}}"></script>
 
 <!-- counter , waypoint,Hover Direction -->
-<script src="layout/js/jquery.counterup.min.js"></script>
-<script src="layout/js/waypoints.min.js"></script>
-<script src="layout/js/jquery.countdown.min.js"></script>
-<script src="layout/js/hover-direction-snake.min.js"></script>
+<script src="{{asset('layout/js/jquery.counterup.min.js')}}"></script>
+<script src="{{asset('layout/js/waypoints.min.js')}}"></script>
+<script src="{{asset('layout/js/jquery.countdown.min.js')}}"></script>
+<script src="{{asset('layout/js/hover-direction-snake.min.js')}}"></script>
 
 <!-- contact js -->
-<script src="layout/js/contact.js"></script>
-<script src="layout/js/jquery.form.js"></script>
-<script src="layout/js/jquery.validate.min.js"></script>
-<script src="layout/js/mail-script.js"></script>
-<script src="layout/js/jquery.ajaxchimp.min.js"></script>
+<script src="{{asset('layout/js/contact.js')}}"></script>
+<script src="{{asset('layout/js/jquery.form.js')}}"></script>
+<script src="{{asset('layout/js/jquery.validate.min.js')}}"></script>
+<script src="{{asset('layout/js/mail-script.js')}}"></script>
+<script src="{{asset('layout/js/jquery.ajaxchimp.min.js')}}"></script>
 
 <!-- Jquery Plugins, main Jquery -->	
-<script src="layout/js/plugins.js"></script>
-<script src="layout/js/main.js"></script>
+<script src="{{asset('layout/js/plugins.js')}}"></script>
+<script src="{{asset('layout/js/main.js')}}"></script>
 
 </body>
 </html>
