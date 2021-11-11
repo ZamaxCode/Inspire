@@ -102,7 +102,7 @@
     <!-- Header End -->
     <main>
         
-        {{ $slot }}
+        @yield('contenido')
         
     </main>
     <footer>

@@ -18,12 +18,14 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('publicacion/');
 });
 
+/*
 Route::get('/test', function () {
     return view('inspire/publicacion_create');
 });
+*/
 
 Route::resource('publicacion', PublicacionController::class);
 
