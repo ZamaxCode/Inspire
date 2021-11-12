@@ -33,7 +33,7 @@
             <article class="blog_item">
                 <div class="blog_details">
 
-                    <form action="{{route('publicacion.store')}}" method="post" enctype="multipart/form-data">
+                    <form action="{{route('publicacion.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <h2 class="blog-head">Titulo de la publicacion</h2>

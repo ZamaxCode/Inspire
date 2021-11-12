@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Publicacion extends Model
+class Comentario extends Model
 {
     use HasFactory;
     protected $fillable = [
         'user_id',
+        'publicacion_id',
         'titulo', 
-        'descripcion',
-        'explicacion', 
-        'pais', 
+        'comentario'
     ];
 
     public function user()
@@ -21,8 +20,9 @@ class Publicacion extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function comentarios()
+    public function publicacion()
     {
-        return $this->hasMany(Comentario::class);
+        return $this->belongsTo(Publicacion::class);
     }
+
 }

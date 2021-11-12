@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Comentario;
 use App\Models\Publicacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Validation\Rule;
 
 class PublicacionController extends Controller
@@ -58,7 +60,7 @@ class PublicacionController extends Controller
             'user_id' => Auth::id()
         ]);
         $publicacion = Publicacion::create($request->all());
-        return redirect()->route('publicacion.index');
+        return redirect()->route('publicacion.index')->with('Publicacion creada');
     }
 
     /**
@@ -69,7 +71,9 @@ class PublicacionController extends Controller
      */
     public function show(Publicacion $publicacion)
     {
-        return view('inspire/publicacion_show', compact('publicacion'));
+        //$comentarios = DB::table('comentarios')->where('publicacion_id', $publicacion->id)->get();
+        $comentarios = Comentario::all();
+        return view('inspire/publicacion_show', compact('publicacion', 'comentarios'));
     }
 
     /**
