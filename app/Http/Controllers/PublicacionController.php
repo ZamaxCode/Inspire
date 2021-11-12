@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
 use App\Models\Comentario;
 use App\Models\Publicacion;
 use Illuminate\Http\Request;
@@ -35,7 +36,8 @@ class PublicacionController extends Controller
      */
     public function create()
     {
-        return view('inspire/publicacion_create');
+        $categorias = Categoria::all();
+        return view('inspire/publicacion_create', compact('categorias'));
     }
 
     /**
@@ -60,6 +62,7 @@ class PublicacionController extends Controller
             'user_id' => Auth::id()
         ]);
         $publicacion = Publicacion::create($request->all());
+        //$publicacion->categorias()->attach($request->categoria_id);
         return redirect()->route('publicacion.index')->with('Publicacion creada');
     }
 

@@ -57,6 +57,7 @@
                         
                         <div class="mt-30">
                             <div class="default-select" id="default-select">
+                                <h3 class="blog-head">¿Donde estas?</h3>
                                 <select style="display: none;" name="pais">
                                     <option value="Mexico">Mexico</option>
                                     <option value="Estados Unidos">Estados Unidos</option>
@@ -72,6 +73,18 @@
                                 </select>
                             </div>
                         </div>
+                        
+                        <div class="mt-30">
+                            <div class="default-select" id="default-select">
+                                <h3 class="blog-head">Categorias</h3>
+                                <select style="display: none;" multiple name="categoria_id[]" >
+                                    @foreach ($categorias as $categoria)
+                                        <option selected value="{{ $categoria->id }}">{{ $categoria->categoria }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="mt-30"> 
                             <input type="submit" class="genric-btn primary-border circle">
                         </div>
