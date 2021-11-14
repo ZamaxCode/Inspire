@@ -87,23 +87,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @auth
-                                        @if (Auth::user()->email==$comentario->user->email)
-                                            <div class="mt-20">
-                                                <form action="{{route('comentario.edit', $comentario)}}">
-                                                    @csrf
-                                                    <input type="submit" value="Editar" class="genric-btn success circle">
-                                                </form>
-                                            </div>
-                                            <div class="mt-20">
-                                                <form action="{{route('comentario.destroy', $comentario)}}" method="POST">
-                                                    @method('DELETE')    
-                                                    @csrf
-                                                    <input type="submit" value="Eliminar" class="genric-btn danger circle">
-                                                </form>
-                                            </div> 
-                                        @endif
-                                    @endauth
+                                    @can('update', Publicacion::class)
+                                        <div class="mt-20">
+                                            <form action="{{route('comentario.edit', $comentario)}}">
+                                                @csrf
+                                                <input type="submit" value="Editar" class="genric-btn success circle">
+                                            </form>
+                                        </div>
+                                        <div class="mt-20">
+                                            <form action="{{route('comentario.destroy', $comentario)}}" method="POST">
+                                                @method('DELETE')    
+                                                @csrf
+                                                <input type="submit" value="Eliminar" class="genric-btn danger circle">
+                                            </form>
+                                        </div> 
+                                    @endcan
                                 </div>
                             @endif
                         @endforeach

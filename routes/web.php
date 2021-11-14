@@ -31,5 +31,5 @@ Route::resource('publicacion', PublicacionController::class);
 Route::resource('comentario', ComentarioController::class);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return redirect('publicacion/');
 })->name('dashboard');

@@ -25,45 +25,39 @@
             </div>
         </div>
     </section>
-
-    @auth
-        @if (Auth::user()->email==$comentario->user->email)
-            <div class="services-area services-area2 section-padding40">
-                <div class="container">
-                    <!-- Put your content here -->
-                    <h1 class="mb-20">Actualice la informacion</h1>
-                    <form class="form-contact comment_form" action="{{route('comentario.update', $comentario)}}" method="POST">
-                        @method('PATCH')
-                        @csrf
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input class="form-control" name="titulo" type="text" placeholder="Titulo" value="{{ $comentario->titulo }}">
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <textarea class="form-control w-100" name="comentario" cols="30" rows="9" placeholder="Deja tu comentario">{{ $comentario->comentario }}</textarea>
-                                </div>
+    
+    @can('update', Publicacion::class)
+        <div class="services-area services-area2 section-padding40">
+            <div class="container">
+                <!-- Put your content here -->
+                <h1 class="mb-20">Actualice la informacion</h1>
+                <form class="form-contact comment_form" action="{{route('comentario.update', $comentario)}}" method="POST">
+                    @method('PATCH')
+                    @csrf
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input class="form-control" name="titulo" type="text" placeholder="Titulo" value="{{ $comentario->titulo }}">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <button type="submit" class="button button-contactForm btn_1 boxed-btn">Actualiza informacion</button>
+
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control w-100" name="comentario" cols="30" rows="9" placeholder="Deja tu comentario">{{ $comentario->comentario }}</textarea>
+                            </div>
                         </div>
-                    </form>                    
-                </div>   
-            </div>
-        @else
-            <div class="services-area services-area2 section-padding40">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="button button-contactForm btn_1 boxed-btn">Actualiza informacion</button>
+                    </div>
+                </form>                    
+            </div>   
+        </div>
+    @elsecan('update', Publicacion::class)
+        <div class="services-area services-area2 section-padding40">
                 <div class="container">
                     <h1 class="mb-20">Parece que usted no es el dueño de este comentario</h1>
                 </div>   
             </div>
-        
-        @endif
-
-    @endauth
-
-    
+    @endcan 
 </x-inspire-layout>

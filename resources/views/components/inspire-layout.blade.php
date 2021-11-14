@@ -72,7 +72,7 @@
                                             @if (Route::has('login'))
                                                 
                                                 @auth
-                                                    <li class="button-header"><a href="http://inspire.test/user/profile" class="btn btn3">Perfil</a></li>
+                                                    <li class="button-header"><a href="http://inspire.test/user/profile" class="btn btn3">Perfil</a></li>         
                                                 @else
                                                     <li class="button-header"><a href="{{ route('login') }}" class="btn btn3">Log in</a></li>
 

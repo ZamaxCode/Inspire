@@ -75,7 +75,8 @@ class PublicacionController extends Controller
     public function show(Publicacion $publicacion)
     {
         //$comentarios = DB::table('comentarios')->where('publicacion_id', $publicacion->id)->get();
-        $comentarios = Comentario::all();
+        $comentarios = $publicacion->comentarios;
+        //dd($comentarios);
         return view('inspire/publicacion_show', compact('publicacion', 'comentarios'));
     }
 
