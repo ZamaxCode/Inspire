@@ -52,7 +52,7 @@ class ComentarioController extends Controller
             'user_id' => Auth::id(),
         ]);
         Comentario::create($request->all());
-        return redirect()->route('publicacion.show', $request->publicacion_id);
+        return redirect()->route('publicacion.show', $request->publicacion_id)->with('msg', 'Comentario hecho');
     }
 
     /**
@@ -92,7 +92,7 @@ class ComentarioController extends Controller
         ]);
 
         Comentario::where('id', $comentario->id)->update($request->except('_token', '_method'));
-        return redirect()->route('publicacion.show', $comentario->publicacion);
+        return redirect()->route('publicacion.show', $comentario->publicacion)->with('msg', 'Comentario editado');
     }
 
     /**
@@ -105,6 +105,6 @@ class ComentarioController extends Controller
     {   
         $temp = $comentario;
         $comentario->delete();
-        return redirect()->route('publicacion.show', $temp->publicacion);
+        return redirect()->route('publicacion.show', $temp->publicacion)->with('msg', 'Comentario eliminado');
     }
 }

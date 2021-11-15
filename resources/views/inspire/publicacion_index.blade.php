@@ -28,6 +28,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
+                    @if (session('msg'))
+                        <div class="alert alert-success" role="success">
+                        {{ session('msg') }}
+                        </div>
+                    @endif
                     <div class="blog_right_sidebar">
                         <aside class="single_sidebar_widget search_widget">
                             <form action="{{route('publicacion.create')}}">

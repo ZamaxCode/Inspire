@@ -61,7 +61,7 @@ class PublicacionController extends Controller
         ]);
         $publicacion = Publicacion::create($request->all());
         //$publicacion->categorias()->attach($request->categoria_id);
-        return redirect()->route('publicacion.index')->with('Publicacion creada');
+        return redirect()->route('publicacion.index')->with('msg', 'Publicacion creada');
     }
 
     /**
@@ -104,7 +104,7 @@ class PublicacionController extends Controller
         ]);
 
         Publicacion::where('id', $publicacion->id)->update($request->except('_token', '_method', 'archivo'));
-        return redirect()->route('publicacion.show', $publicacion);
+        return redirect()->route('publicacion.show', $publicacion)->with('msg', 'Publicacion editada');
     }
 
     /**
@@ -116,6 +116,6 @@ class PublicacionController extends Controller
     public function destroy(Publicacion $publicacion)
     {
         $publicacion->delete();
-        return redirect()->route('publicacion.index');
+        return redirect()->route('publicacion.index')->with('msg', 'Publicacion eliminada');
     }
 }

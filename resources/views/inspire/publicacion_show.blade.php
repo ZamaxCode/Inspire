@@ -29,6 +29,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 posts-list">
+                    
+                    @if (session('msg'))
+                        <div class="alert alert-success" role="success">
+                        {{ session('msg') }}
+                        </div>
+                    @endif
 
                     <div class="single-post">
                         <div class="feature-img">
@@ -53,7 +59,7 @@
                                     </form>
                                 </div>
                                 <div class="mt-20">
-                                    <form action="{{route('publicacion.destroy', $publicacion)}}" method="POST">
+                                    <form action="{{route('publicacion.destroy', $publicacion)}}" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar la publicacion?')">
                                         @method('DELETE')    
                                         @csrf
                                         <input type="submit" value="Eliminar" class="genric-btn danger circle">
@@ -95,7 +101,7 @@
                                             </form>
                                         </div>
                                         <div class="mt-20">
-                                            <form action="{{route('comentario.destroy', $comentario)}}" method="POST">
+                                            <form action="{{route('comentario.destroy', $comentario)}}" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar el comentario?')">
                                                 @method('DELETE')    
                                                 @csrf
                                                 <input type="submit" value="Eliminar" class="genric-btn danger circle">
