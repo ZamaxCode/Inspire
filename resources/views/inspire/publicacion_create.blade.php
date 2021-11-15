@@ -52,7 +52,7 @@
                         
                         <div class="mt-30">
                             <h3 class="blog-head">Sube tu arte</h3>
-                            <input type="file" name="archivo" required class="single-input">
+                            <input type="file" name="imagen_path" required class="single-input">
                         </div>
 
                         <div class="mt-30">
@@ -85,14 +85,12 @@
                         </div>
                         
                         <div class="mt-30">
-                            <div class="default-select" id="default-select">
-                                <h3 class="blog-head">Categorias</h3>
-                                <select style="display: none;" multiple name="categoria_id[]" >
-                                    @foreach ($categorias as $categoria)
-                                        <option selected value="{{ $categoria->id }}">{{ $categoria->categoria }}</option>
-                                    @endforeach
-                                </select>
-                            </div>
+                            <h3 class="blog-head">Categorias</h3>
+                            @foreach ($categorias as $categoria)
+                                <input type="checkbox" name="categorias_id[]" value="{{ $categoria->id }}">
+                                <label for="default-checkbox">{{ $categoria->categoria }}</label>
+                                <br>
+                            @endforeach
                         </div>
 
                         <div class="mt-30"> 

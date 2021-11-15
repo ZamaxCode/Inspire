@@ -13,7 +13,8 @@ class Publicacion extends Model
         'titulo', 
         'descripcion',
         'explicacion', 
-        'pais', 
+        'pais',
+        'imagen'
     ];
 
     public function user()

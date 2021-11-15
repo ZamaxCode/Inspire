@@ -54,8 +54,8 @@
                             </div>
                             
                             <div class="mt-30">
-                                <h3 class="blog-head">Sube tu arte</h3>
-                                <input type="file" name="archivo" required class="single-input">
+                                <h3 class="blog-head">Sube tu arte (Si no quiere reemplazar imagen, no suba nada)</h3>
+                                <input type="file" name="imagen_path"  class="single-input">
                             </div>
 
                             <div class="mt-30">
@@ -85,6 +85,15 @@
                                         <option value="Francia">Francia</option>
                                     </select>
                                 </div>
+                            </div>
+
+                            <div class="mt-30">
+                                <h3 class="blog-head">Categorias</h3>
+                                @foreach ($categorias as $categoria)
+                                    <input type="checkbox" name="categorias[]" value="{{ $categoria->id }}" {{ array_search($categoria->id, $publicacion->categorias->pluck('id')->toArray()) === false ? '' : 'checked' }}>
+                                    <label for="default-checkbox">{{ $categoria->categoria }}</label>
+                                    <br>
+                                @endforeach
                             </div>
                             
                             <div class="mt-30"> 

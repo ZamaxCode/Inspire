@@ -8,6 +8,7 @@ use App\Models\Publicacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
 class PublicacionController extends Controller
@@ -53,14 +54,18 @@ class PublicacionController extends Controller
             'descripcion' => 'required|max:255',
             'explicacion' => 'required',
             'pais' => 'max:15',
+            'imagen_path' => 'required|image'
         ]);
-        
+
+        $imagen = time() . '-' . $request->titulo . '.' . $request->imagen_path->extension();
+        $request->imagen_path->move(public_path('layout/img/publicaciones'), $imagen);
 
         $request->merge([
-            'user_id' => Auth::id()
+            'imagen' => $imagen,
+            'user_id' => Auth::id(),
         ]);
         $publicacion = Publicacion::create($request->all());
-        //$publicacion->categorias()->attach($request->categoria_id);
+        $publicacion->categorias()->attach($request->categorias_id);
         return redirect()->route('publicacion.index')->with('msg', 'Publicacion creada');
     }
 
@@ -84,7 +89,8 @@ class PublicacionController extends Controller
      */
     public function edit(Publicacion $publicacion)
     {   
-        return view('inspire/publicacion_edit', compact('publicacion'));
+        $categorias = Categoria::all();
+        return view('inspire/publicacion_edit', compact('publicacion', 'categorias'));
     }
 
     /**
@@ -102,8 +108,18 @@ class PublicacionController extends Controller
             'explicacion' => 'required',
             'pais' => 'max:15',
         ]);
+        if($request->imagen_path != '')
+        {
+            $imagen = time() . '-' . $request->titulo . '.' . $request->imagen_path->extension();
+            $request->imagen_path->move(public_path('layout/img/publicaciones'), $imagen);
 
-        Publicacion::where('id', $publicacion->id)->update($request->except('_token', '_method', 'archivo'));
+            $request->merge([
+                'imagen' => $imagen,
+            ]);
+            
+        }
+        Publicacion::where('id', $publicacion->id)->update($request->except('_token', '_method', 'imagen_path', 'categorias_id'));
+        $publicacion->categorias()->sync($request->categorias_id);
         return redirect()->route('publicacion.show', $publicacion)->with('msg', 'Publicacion editada');
     }
 

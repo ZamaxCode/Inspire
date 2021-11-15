@@ -20,6 +20,7 @@ class CreatePublicacionsTable extends Migration
             $table->string('descripcion');
             $table->text('explicacion');
             $table->string('pais');
+            $table->string('imagen');
             $table->timestamps();
         });
     }

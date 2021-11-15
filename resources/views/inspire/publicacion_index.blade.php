@@ -88,7 +88,7 @@
                         @for ($i = sizeof($publicaciones)-1; $i >= 0; $i--)
                             <article class="blog_item">
                                 <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="{{asset('layout/img/blog/single_blog_1.png')}}" alt="">
+                                    <img class="card-img rounded-0" src="{{ asset('layout/img/publicaciones/' . $publicaciones[$i]->imagen) }}" alt="">
                                 </div>
                                 <div class="blog_details">
                                     <a class="d-inline-block" href="{{ route('publicacion.show', $publicaciones[$i]) }}">

@@ -38,7 +38,7 @@
 
                     <div class="single-post">
                         <div class="feature-img">
-                            <img class="img-fluid" src="{{asset('layout/img/blog/single_blog_1.png')}}" alt="">
+                            <img class="img-fluid" src="{{asset('layout/img/publicaciones/' . $publicacion->imagen)}}" alt="">
                         </div>
                         <div class="blog_details">
                             <h2 style="color: #2d2d2d;">{{ $publicacion->descripcion }}</h2>
