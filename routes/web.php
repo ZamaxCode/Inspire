@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\PublicacionController;
+use App\Models\Categoria;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -29,6 +30,12 @@ Route::get('/test', function () {
 
 Route::resource('publicacion', PublicacionController::class);
 Route::resource('comentario', ComentarioController::class);
+
+Route::get('publicacion/categoria/{categoria}', function(Categoria $categoria){
+    $categorias = Categoria::all();
+    $publicaciones = $categoria->publicaciones;
+    return view('inspire/publicacion_index', compact('publicaciones','categorias'));
+})->name('publicacion.index_categorias');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return redirect('publicacion/');

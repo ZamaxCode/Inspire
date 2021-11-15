@@ -27,7 +27,8 @@ class PublicacionController extends Controller
     public function index()
     {
         $publicaciones = Publicacion::all();
-        return view('inspire/publicacion_index', compact('publicaciones'));
+        $categorias = Categoria::all();
+        return view('inspire/publicacion_index', compact('publicaciones', 'categorias'));
     }
 
     /**
