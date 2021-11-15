@@ -48,14 +48,12 @@ class PublicacionController extends Controller
      */
     public function store(Request $request)
     {
-        /*$request->validate([
-            'titulo' => 'required|max:255',
+        $request->validate([
+            'titulo' => 'required|max:50',
             'descripcion' => 'required|max:255',
-            'apellido_materno' => 'max:255',
-            'codigo' => 'required|max:255|unique:App\Models\Persona,codigo',
-            'correo' => 'email|max:255',
-            'telefono' => 'max:50'
-        ]);*/
+            'explicacion' => 'required',
+            'pais' => 'max:15',
+        ]);
         
 
         $request->merge([
@@ -74,9 +72,7 @@ class PublicacionController extends Controller
      */
     public function show(Publicacion $publicacion)
     {
-        //$comentarios = DB::table('comentarios')->where('publicacion_id', $publicacion->id)->get();
         $comentarios = $publicacion->comentarios;
-        //dd($comentarios);
         return view('inspire/publicacion_show', compact('publicacion', 'comentarios'));
     }
 
@@ -100,19 +96,12 @@ class PublicacionController extends Controller
      */
     public function update(Request $request, Publicacion $publicacion)
     {
-        /*$request->validate([
-
-            'nombre' => 'required|max:255',
-            'apellido_paterno' => 'required|max:255',
-            'apellido_materno' => 'max:255',
-            'codigo' => [
-                        'required',
-                        Rule::unique('personas')->ignore($persona->id)
-                    ],
-            'correo' => 'email|max:255',
-            'telefono' => 'max:50'
-
-        ]);*/
+        $request->validate([
+            'titulo' => 'required|max:50',
+            'descripcion' => 'required|max:255',
+            'explicacion' => 'required',
+            'pais' => 'max:15',
+        ]);
 
         Publicacion::where('id', $publicacion->id)->update($request->except('_token', '_method', 'archivo'));
         return redirect()->route('publicacion.show', $publicacion);

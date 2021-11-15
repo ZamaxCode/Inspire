@@ -110,19 +110,30 @@
 
                     <div class="comment-form">
                         <h4>Deja un comentario</h4>
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         <form class="form-contact comment_form" action="{{route('comentario.store')}}" method="POST">
                             @csrf
                             <input type="hidden" name="publicacion_id" value="{{ $publicacion->id }}">
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <input class="form-control" name="titulo" type="text" placeholder="Titulo">
+                                        <input class="form-control" name="titulo" type="text" required placeholder="Titulo">
                                     </div>
                                 </div>
 
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control w-100" name="comentario" cols="30" rows="9" placeholder="Deja tu comentario"></textarea>
+                                        <textarea class="form-control w-100" name="comentario" cols="30" rows="9" required placeholder="Deja tu comentario"></textarea>
                                     </div>
                                 </div>
                             </div>

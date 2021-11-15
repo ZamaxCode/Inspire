@@ -43,10 +43,15 @@ class ComentarioController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'titulo' => 'required|max:50',
+            'comentario' => 'required|max:500',
+        ]);
+
         $request->merge([
             'user_id' => Auth::id(),
         ]);
-        $comentario = Comentario::create($request->all());
+        Comentario::create($request->all());
         return redirect()->route('publicacion.show', $request->publicacion_id);
     }
 
@@ -71,7 +76,7 @@ class ComentarioController extends Controller
     {
         return view('inspire/comentario_edit', compact('comentario'));
     }
-
+    
     /**
      * Update the specified resource in storage.
      *
@@ -81,19 +86,10 @@ class ComentarioController extends Controller
      */
     public function update(Request $request, Comentario $comentario)
     {
-        /*$request->validate([
-
-            'nombre' => 'required|max:255',
-            'apellido_paterno' => 'required|max:255',
-            'apellido_materno' => 'max:255',
-            'codigo' => [
-                        'required',
-                        Rule::unique('personas')->ignore($persona->id)
-                    ],
-            'correo' => 'email|max:255',
-            'telefono' => 'max:50'
-
-        ]);*/
+        $request->validate([
+            'titulo' => 'required|max:50',
+            'comentario' => 'required|max:500',
+        ]);
 
         Comentario::where('id', $comentario->id)->update($request->except('_token', '_method'));
         return redirect()->route('publicacion.show', $comentario->publicacion);

@@ -25,25 +25,35 @@
             </div>
         </div>
     </section>
-    
     @can('update', Publicacion::class)
         <div class="services-area services-area2 section-padding40">
             <div class="container">
                 <!-- Put your content here -->
                 <h1 class="mb-20">Actualice la informacion</h1>
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
                 <form class="form-contact comment_form" action="{{route('comentario.update', $comentario)}}" method="POST">
                     @method('PATCH')
                     @csrf
                     <div class="row">
                         <div class="col-12">
                             <div class="form-group">
-                                <input class="form-control" name="titulo" type="text" placeholder="Titulo" value="{{ $comentario->titulo }}">
+                                <input class="form-control" name="titulo" type="text" required placeholder="Titulo" value="{{ $comentario->titulo }}">
                             </div>
                         </div>
 
                         <div class="col-12">
                             <div class="form-group">
-                                <textarea class="form-control w-100" name="comentario" cols="30" rows="9" placeholder="Deja tu comentario">{{ $comentario->comentario }}</textarea>
+                                <textarea class="form-control w-100" name="comentario" cols="30" rows="9" required placeholder="Deja tu comentario">{{ $comentario->comentario }}</textarea>
                             </div>
                         </div>
                     </div>

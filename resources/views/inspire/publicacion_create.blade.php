@@ -33,6 +33,16 @@
             <article class="blog_item">
                 <div class="blog_details">
 
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+
                     <form action="{{route('publicacion.store')}}" method="POST" enctype="multipart/form-data">
                         @csrf
                         <div>
