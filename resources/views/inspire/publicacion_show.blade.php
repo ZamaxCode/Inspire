@@ -28,8 +28,25 @@
     <div class="services-area services-area2 section-padding40">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 posts-list">
+                
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget post_category_widget">
+                            <h4 class="widget_title" style="color: #2d2d2d;">Categorias</h4>
+                            <ul class="list cat-list">
+                                @foreach ($publicacion->categorias as $categoria)
+                                    <li>
+                                        <p>{{ $categoria->categoria }}</p>
+                                    </li>
+                                @endforeach
+                                
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
 
+                <div class="col-lg-8 posts-list">
+                    
                     @if (session('msg'))
                         <div class="alert alert-success" role="success">
                         {{ session('msg') }}
