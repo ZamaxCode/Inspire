@@ -91,7 +91,7 @@
                                 <h3 class="blog-head">Categorias</h3>
                                 @foreach ($categorias as $categoria)
                                     <input type="checkbox" name="categorias_id[]" value="{{ $categoria->id }}" {{ array_search($categoria->id, $publicacion->categorias->pluck('id')->toArray()) === false ? '' : 'checked' }}>
-                                    <label for="default-checkbox">{{ $categoria->categoria }}</label>
+                                    <label for="default-checkbox">{{ $categoria->categoria_descripcion }}</label>
                                     <br>
                                 @endforeach
                             </div>

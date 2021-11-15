@@ -13,4 +13,10 @@ class Categoria extends Model
     {
         return $this->belongsToMany(Publicacion::class);
     }
+    
+    public function getCategoriaDescripcionAttribute()
+    {
+        return $this->categoria . ' (' . $this->descripcion . ')';
+    }
+
 }

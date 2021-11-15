@@ -31,4 +31,10 @@ class Publicacion extends Model
     {
         return $this->belongsToMany(Categoria::class);
     }
+
+    public function setTituloAttribute($titulo)
+    {
+        return $this->attributes['titulo'] = strtoupper($titulo);
+    }
+    
 }
