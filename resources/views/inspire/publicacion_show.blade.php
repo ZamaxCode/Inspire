@@ -29,7 +29,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 posts-list">
-                    
+
                     @if (session('msg'))
                         <div class="alert alert-success" role="success">
                         {{ session('msg') }}
@@ -50,8 +50,7 @@
                             <p class="excert">
                                 {{ $publicacion->explicacion }}
                             </p>
-                            @auth
-                                @if (Auth::user()->email==$publicacion->user->email)
+                            @can('update', $publicacion)
                                 <div class="mt-20">
                                     <form action="{{route('publicacion.edit', $publicacion)}}">
                                         @csrf
@@ -65,8 +64,7 @@
                                         <input type="submit" value="Eliminar" class="genric-btn danger circle">
                                     </form>
                                 </div> 
-                                @endif
-                            @endauth
+                            @endcan
                         </div>
                     </div>
     
@@ -93,7 +91,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    @can('update', Publicacion::class)
+                                    @can('update', $comentario)
                                         <div class="mt-20">
                                             <form action="{{route('comentario.edit', $comentario)}}">
                                                 @csrf
@@ -148,7 +146,6 @@
                             </div>
                         </form>
                     </div>
-
     
                 </div>
             </div>

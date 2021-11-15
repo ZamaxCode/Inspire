@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    @can('update', Publicacion::class)
+    @can('update', $comentario)
         <div class="services-area services-area2 section-padding40">
             <div class="container">
                 <!-- Put your content here -->
@@ -63,11 +63,11 @@
                 </form>                    
             </div>   
         </div>
-    @elsecan('update', Publicacion::class)
+    @elsecan('update', $comentario)
         <div class="services-area services-area2 section-padding40">
-                <div class="container">
-                    <h1 class="mb-20">Parece que usted no es el dueño de este comentario</h1>
-                </div>   
-            </div>
+            <div class="container">
+                <h1 class="mb-20">Parece que usted no es el dueño de este comentario</h1>
+            </div>   
+        </div>
     @endcan 
 </x-inspire-layout>

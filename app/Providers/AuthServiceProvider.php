@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Models\Comentario;
 use App\Models\Publicacion;
 use App\Models\User;
+use App\Policies\ComentarioPolicy;
 use App\Policies\PublicacionPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
@@ -19,6 +20,7 @@ class AuthServiceProvider extends ServiceProvider
     protected $policies = [
         // 'App\Models\Model' => 'App\Policies\ModelPolicy',
         Publicacion::class => PublicacionPolicy::class,
+        Comentario::class => ComentarioPolicy::class,
     ];
 
     /**
