@@ -20,6 +20,7 @@ class CreateComentariosTable extends Migration
             $table->string('titulo');
             $table->text('comentario');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

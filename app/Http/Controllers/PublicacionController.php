@@ -7,7 +7,7 @@ use App\Models\Comentario;
 use App\Models\Publicacion;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
@@ -26,7 +26,7 @@ class PublicacionController extends Controller
 
     public function index()
     {
-        $publicaciones = Publicacion::all();
+        $publicaciones = Publicacion::with('categorias')->get();
         $categorias = Categoria::all();
         return view('inspire/publicacion_index', compact('publicaciones', 'categorias'));
     }
@@ -111,6 +111,11 @@ class PublicacionController extends Controller
         ]);
         if($request->imagen_path != '')
         {
+            $imagen_old = "layout/img/publicaciones/" . $publicacion->imagen;
+            if(File::exists($imagen_old)) {
+                File::delete($imagen_old);
+            }
+
             $imagen = time() . '-' . $request->titulo . '.' . $request->imagen_path->extension();
             $request->imagen_path->move(public_path('layout/img/publicaciones'), $imagen);
 
@@ -132,6 +137,10 @@ class PublicacionController extends Controller
      */
     public function destroy(Publicacion $publicacion)
     {
+        $imagen_path = "layout/img/publicaciones/" . $publicacion->imagen;
+        if(File::exists($imagen_path)) {
+            File::delete($imagen_path);
+        }
         $publicacion->delete();
         return redirect()->route('publicacion.index')->with('msg', 'Publicacion eliminada');
     }

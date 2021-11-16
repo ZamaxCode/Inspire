@@ -70,10 +70,17 @@
                                     <a class="d-inline-block" href="{{ route('publicacion.show', $publicaciones[$i]) }}">
                                         <h2 class="blog-head" style="color: #2d2d2d;">{{ $publicaciones[$i]->titulo }}</h2>
                                     </a>
+                                    <p>{{ $publicaciones[$i]->descripcion }}</p>
                                     <ul class="blog-info-link">
                                         <li><i class="fa fa-user"></i>{{ $publicaciones[$i]->user->name }}</li>
                                         <li>{{ $publicaciones[$i]->pais }}</li>
                                         <li>{{ $publicaciones[$i]->created_at }}</li>
+                                    </ul>
+                                    <br>
+                                    <ul class="blog-info-link">
+                                        @foreach ($publicaciones[$i]->categorias as $categoria)
+                                            <li>{{ $categoria->categoria }}</li> 
+                                        @endforeach
                                     </ul>
                                 </div>
                             </article>
