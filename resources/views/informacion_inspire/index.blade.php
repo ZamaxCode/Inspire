@@ -8,8 +8,8 @@
                     <div class="row">
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay="0.2s">Online learning<br> platform</h1>
-                                <p data-animation="fadeInLeft" data-delay="0.4s">Build skills with courses, certificates, and degrees online from world-class universities and companies</p>
+                                <h1 data-animation="fadeInLeft" data-delay="0.2s">INSPIRE<br> Art Blog</h1>
+                                <p data-animation="fadeInLeft" data-delay="0.4s">"El arte no reproduce aquello que es visible, sino, que hace visible aquello que no siempre lo es."  -Paul Klee, 1920</p>
                                 <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
                             </div>
                         </div>
@@ -28,8 +28,8 @@
                             <img src="assets/img/icon/icon1.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>60+ UX courses</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡CONOCE!</h3>
+                            <p>En este Art-Blog podras conocer el arte que se vive y se siente en distintas partes alrededor del mundo.</p>
                         </div>
                     </div>
                 </div>
@@ -39,8 +39,8 @@
                             <img src="assets/img/icon/icon2.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>Expert instructors</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡EXPERIMENTA!</h3>
+                            <p>Observa y enterate de las publicaciones que día a día hacen nuestros bloggers.</p>
                         </div>
                     </div>
                 </div>
@@ -50,8 +50,8 @@
                             <img src="assets/img/icon/icon3.svg" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>Life time access</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡VIVE!</h3>
+                            <p>¡Identifícate con algún tipo de arte y comienza tu aventura artística!</p>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>Our featured courses</h2>
+                        <h2>¡SELECCIONA EL ARTE QUE DESEAS CONOCER!</h2>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                             <a href="#"><img src="assets/img/gallery/featured1.png" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>User Experience</p>
+                            <p>Arte Realista</p>
                             <h3><a href="#">Fundamental of UX for Application design</a></h3>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
 
@@ -109,7 +109,7 @@
                             <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>User Experience</p>
+                            <p>Arte Figurativo</p>
                             <h3><a href="#">Fundamental of UX for Application design</a></h3>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
                             </p>
@@ -140,7 +140,7 @@
                             <a href="#"><img src="assets/img/gallery/featured3.png" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>User Experience</p>
+                            <p>Arte Abstracto</p>
                             <h3><a href="#">Fundamental of UX for Application design</a></h3>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
 
@@ -173,7 +173,7 @@
                             <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>User Experience</p>
+                            <p>Arte Moderno</p>
                             <h3><a href="#">Fundamental of UX for Application design</a></h3>
                             <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
 
