@@ -9,7 +9,7 @@
                         <div class="col-xl-6 col-lg-7 col-md-12">
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInLeft" data-delay="0.2s">INSPIRE<br> Art Blog</h1>
-                                <p data-animation="fadeInLeft" data-delay="0.4s">"El arte no reproduce aquello que es visible, sino, que hace visible aquello que no siempre lo es."  -Paul Klee, 1920</p>
+                                <p data-animation="fadeInLeft" data-delay="0.4s">"El arte no reproduce aquello que es visible, sino, que hace visible aquello que no siempre lo es."  -Paul Klee, 1920. <br> Inspire, es un BLog de Arte diseñado para todas las personas que comparten un cariño y aprecio por este. En este blog podrás encontrar diferentes tipos de arte con una gran variedad de técnicas, tamaños y texturas. <br> El lugar indicado para encontrar tu "Inspiración".</p>
                                 <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
                             </div>
                         </div>
