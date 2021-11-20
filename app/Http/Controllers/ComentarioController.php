@@ -90,7 +90,7 @@ class ComentarioController extends Controller
             'titulo' => 'required|max:50',
             'comentario' => 'required|max:500',
         ]);
-
+        
         Comentario::where('id', $comentario->id)->update($request->except('_token', '_method'));
         return redirect()->route('publicacion.show', $comentario->publicacion)->with('msg', 'Comentario editado');
     }

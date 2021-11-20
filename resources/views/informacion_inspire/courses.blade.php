@@ -1,4 +1,3 @@
-
 <x-inspire-layout>
     <!--? slider Area Start-->
     <section class="slider-area slider-area2">
@@ -399,4 +398,4 @@
             </div>
         </div>
     </div>
-    
+</x-inspire-layout>

@@ -1,4 +1,3 @@
-
 <x-inspire-layout>
     <!--? slider Area Start-->
     <section class="slider-area slider-area2">
@@ -128,4 +127,4 @@
         </div>
     </section>
     <!-- Contact Area End -->
-
+</x-inspire-layout>

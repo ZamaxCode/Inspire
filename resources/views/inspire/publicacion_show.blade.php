@@ -88,43 +88,41 @@
                     <div class="comments-area">
                         <h4>Comentarios</h4>
                         @foreach ($comentarios as $comentario)
-                            @if ($comentario->publicacion->id == $publicacion->id)
-                                <div class="comment-list">
-                                    <div class="single-comment justify-content-between d-flex">
-                                        <div class="user justify-content-between d-flex">
-                                            <div class="thumb">
-                                                <img src="assets/img/blog/comment_1.png" alt="">
-                                            </div>
-                                            <div class="desc">
-                                                <h2>{{ $comentario->titulo }}</h2>
-                                                <p class="comment">
-                                                {{ $comentario->comentario }}
-                                                </p>
-                                                <div class="d-flex justify-content-between">
-                                                    <div class="d-flex align-items-center">
-                                                        <p>{{ $comentario->user->name }}</p>
-                                                    </div>
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="thumb">
+                                            <img src="assets/img/blog/comment_1.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <h2>{{ $comentario->titulo }}</h2>
+                                            <p class="comment">
+                                            {{ $comentario->comentario }}
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <p>{{ $comentario->user->name }}</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    @can('update', $comentario)
-                                        <div class="mt-20">
-                                            <form action="{{route('comentario.edit', $comentario)}}">
-                                                @csrf
-                                                <input type="submit" value="Editar" class="genric-btn success circle">
-                                            </form>
-                                        </div>
-                                        <div class="mt-20">
-                                            <form action="{{route('comentario.destroy', $comentario)}}" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar el comentario?')">
-                                                @method('DELETE')    
-                                                @csrf
-                                                <input type="submit" value="Eliminar" class="genric-btn danger circle">
-                                            </form>
-                                        </div> 
-                                    @endcan
                                 </div>
-                            @endif
+                                @can('update', $comentario)
+                                    <div class="mt-20">
+                                        <form action="{{route('comentario.edit', $comentario)}}">
+                                            @csrf
+                                            <input type="submit" value="Editar" class="genric-btn success circle">
+                                        </form>
+                                    </div>
+                                    <div class="mt-20">
+                                        <form action="{{route('comentario.destroy', $comentario)}}" method="POST" onsubmit="return confirm('¿Estas seguro de eliminar el comentario?')">
+                                            @method('DELETE')    
+                                            @csrf
+                                            <input type="submit" value="Eliminar" class="genric-btn danger circle">
+                                        </form>
+                                    </div> 
+                                @endcan
+                            </div>
                         @endforeach
                      </div>
 
