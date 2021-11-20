@@ -58,17 +58,12 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">                                                                                          
-                                            <li class="active" ><a href="index.html">Home</a></li>
-                                            <li><a href="courses.html">Courses</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="#">Blog</a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                    <li><a href="blog_details.html">Blog Details</a></li>
-                                                    <li><a href="elements.html">Element</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li class="active" ><a href="{{route('informacion.index')}}">Home</a></li>
+                                            <li><a href="{{route('publicacion.index')}}">Publicaciones</a></li>
+                                            <li><a href="{{route('informacion.courses')}}">Courses</a></li>
+                                            <li><a href="{{route('informacion.about')}}">About</a></li>
+                                            <li><a href="{{route('informacion.contact')}}">Contact</a></li>
+                                           
                                             @if (Route::has('login'))
                                                 
                                                 @auth

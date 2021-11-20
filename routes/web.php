@@ -22,11 +22,21 @@ Route::get('/', function () {
     return redirect('publicacion/');
 });
 
-/*
-Route::get('/test', function () {
-    return view('inspire/publicacion_create');
-});
-*/
+Route::get('/informacion/courses', function () {
+    return view('informacion_inspire/courses');
+})->name('informacion.courses');
+
+Route::get('/informacion/about', function () {
+    return view('informacion_inspire/about');
+})->name('informacion.about');
+
+Route::get('/informacion/contact', function () {
+    return view('informacion_inspire/contact');
+})->name('informacion.contact');
+
+Route::get('/informacion/index', function () {
+    return view('informacion_inspire/index');
+})->name('informacion.index');
 
 Route::resource('publicacion', PublicacionController::class);
 Route::resource('comentario', ComentarioController::class);
