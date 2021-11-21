@@ -25,7 +25,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="{{asset('layout/img/icon/conoce.png')}}" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>¡CONOCE!</h3>
@@ -36,7 +36,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="{{asset('layout/img/icon/experimenta.png')}}" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>¡EXPERIMENTA!</h3>
@@ -47,7 +47,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="{{asset('layout/img/icon/vive.png')}}" alt="">
                         </div>
                         <div class="features-caption">
                             <h3>¡VIVE!</h3>
@@ -73,12 +73,12 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="assets/img/gallery/featured1.png" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/realista.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>Arte Realista</p>
-                            <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                            <p>ARTE REALISTA</p>
+                            <h3><a href="#">“Usas un espejo de cristal para ver tu cara; usas obras de arte para ver tu alma.”<br>-George Bernard Shaw</a></h3>
+                            <p>El realismo es una forma de expresión en que se retienen las impresiones básicas de la realidad, además de relatar e interpretar la realidad que se esconde debajo de la apariencia de las cosas.
 
                             </p>
                             <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -90,13 +90,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half"></i>
                                     </div>
-                                    <p><span>(4.5)</span> based on 120</p>
+                                    <p><span>(4.5)</span>Calificación de los Arts Bloggers</p>
                                 </div>
                                 <div class="price">
-                                    <span>$135</span>
+                                    <span>14.1K Views</span>
                                 </div>
                             </div>
-                            <a href="#" class="border-btn border-btn2">Find out more</a>
                         </div>
 
                     </div>
@@ -106,12 +105,12 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/figurativo.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>Arte Figurativo</p>
-                            <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                            <p>ARTE FIGURATIVO NO REALISTA</p>
+                            <h3><a href="#">“Hay que tener caos y frenesí en el interior para dar a luz una estrella danzarina.”<br>-Friedrich Nietzsche</a></h3>
+                            <p>El tema que se trata se debe identificar de inmediato a través de la imagen. Sin embargo, esto no significa que se deba imitar a la perfección el aspecto.  
                             </p>
                             <div class="properties__footer d-flex justify-content-between align-items-center">
                                 <div class="restaurant-name">
@@ -122,13 +121,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half"></i>
                                     </div>
-                                    <p><span>(4.5)</span> based on 120</p>
+                                    <p><span>(4.5)</span>Calificación de los Arts Bloggers</p>
                                 </div>
                                 <div class="price">
-                                    <span>$135</span>
+                                    <span>18.5k Views</span>
                                 </div>
                             </div>
-                            <a href="#" class="border-btn border-btn2">Find out more</a>
                         </div>
                     </div>
                 </div>
@@ -137,12 +135,12 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="assets/img/gallery/featured3.png" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/abstracto.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>Arte Abstracto</p>
-                            <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                            <p>ARTE ABSTRACTO</p>
+                            <h3><a href="#"> “El objetivo del arte es representar no la apariencia externa de las cosas, sino su significado interior.”<br>-Aristóteles</a></h3>
+                            <p>Es una forma de expresión de sentimientos artísticos que prescinde de toda figuración y propone una nueva realidad distinta a la natural.​ Usa un lenguaje visual de forma, color y línea para crear una composición.
 
                             </p>
                             <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -154,13 +152,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half"></i>
                                     </div>
-                                    <p><span>(4.5)</span> based on 120</p>
+                                    <p><span>(4.5)</span> Calificación de los Arts Bloggers</p>
                                 </div>
                                 <div class="price">
-                                    <span>$135</span>
+                                    <span>12.7K Views</span>
                                 </div>
                             </div>
-                            <a href="#" class="border-btn border-btn2">Find out more</a>
                         </div>
 
                     </div>
@@ -170,12 +167,12 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="assets/img/gallery/featured2.png" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/impresionista.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
-                            <p>Arte Moderno</p>
-                            <h3><a href="#">Fundamental of UX for Application design</a></h3>
-                            <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.
+                            <p>ARTE IMPRESIONISTA</p>
+                            <h3><a href="#"> “Aunque parezca paradójico, la vida imita al arte mucho más que el arte imita a la vida.”<br>-Oscar Wilde</a></h3>
+                            <p> El movimiento creía en pintar una escena con colores y luces reales. Crear una impresión y mostrar todo lo que uno ve al entrar por primera vez a un lugar.
 
                             </p>
                             <div class="properties__footer d-flex justify-content-between align-items-center">
@@ -187,13 +184,12 @@
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half"></i>
                                     </div>
-                                    <p><span>(4.5)</span> based on 120</p>
+                                    <p><span>(4.5)</span> Calificación de los Arts Bloggers</p>
                                 </div>
                                 <div class="price">
-                                    <span>$135</span>
+                                    <span>11.3k Views</span>
                                 </div>
                             </div>
-                            <a href="#" class="border-btn border-btn2">Find out more</a>
                         </div>
 
                     </div>
