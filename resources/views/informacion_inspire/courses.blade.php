@@ -358,33 +358,33 @@
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon1.svg" alt="">
+                            <img src="{{asset('layout/img/icon/conoce.png')}}" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>60+ UX courses</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡CONOCE!</h3>
+                            <p>En este Art-Blog podras conocer el arte que se vive y se siente en distintas partes alrededor del mundo.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon2.svg" alt="">
+                            <img src="{{asset('layout/img/icon/experimenta.png')}}" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>Expert instructors</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡EXPERIMENTA!</h3>
+                            <p>Observa y enterate de las publicaciones que día a día hacen nuestros bloggers.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services mb-30">
                         <div class="features-icon">
-                            <img src="assets/img/icon/icon3.svg" alt="">
+                            <img src="{{asset('layout/img/icon/vive.png')}}" alt="">
                         </div>
                         <div class="features-caption">
-                            <h3>Life time access</h3>
-                            <p>The automated process all your website tasks.</p>
+                            <h3>¡VIVE!</h3>
+                            <p>¡Identifícate con algún tipo de arte y comienza tu aventura artística!</p>
                         </div>
                     </div>
                 </div>

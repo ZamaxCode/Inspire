@@ -453,7 +453,6 @@
             <div class="row justify-content-center">
                 <div class="col-xl-12">
                     <div class="section-tittle text-center mt-20">
-                        <a href="courses.html" class="border-btn">View More Subjects</a>
                     </div>
                 </div>
             </div>
@@ -519,47 +518,20 @@
             <div class="team-active">
                 <div class="single-cat text-center">
                     <div class="cat-icon">
-                        <img src="assets/img/gallery/team1.png" alt="">
+                        <img src="{{asset('layout/img/gallery/dalia.jpg')}}" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Urela</a></h5>
-                        <p>The automated process all your website tasks.</p>
+                        <h5><a href="services.html">Dalia P.</a></h5>
+                        <p>Contribuciones en Arte Realista y Figurativo.</p>
                     </div>
                 </div>
                 <div class="single-cat text-center">
                     <div class="cat-icon">
-                        <img src="assets/img/gallery/team2.png" alt="">
+                        <img src="{{asset('layout/img/gallery/alex.jpg')}}" alt="">
                     </div>
                     <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Uttom</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team3.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Shakil</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team4.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Arafat</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team3.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. saiful</a></h5>
-                        <p>The automated process all your website tasks.</p>
+                        <h5><a href="services.html">Alex Z.</a></h5>
+                        <p>Contribuciones en Arte Impresionista y Pop Art.</p>
                     </div>
                 </div>
             </div>
