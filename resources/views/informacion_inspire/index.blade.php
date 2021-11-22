@@ -159,7 +159,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <!-- Single -->
@@ -199,61 +198,6 @@
         </div>
     </div>
     <!-- Courses area End -->
-    <!--? About Area-1 Start -->
-    <section class="about-area1 fix pt-10">
-        <div class="support-wrapper align-items-center">
-            <div class="left-content1">
-                <div class="about-icon">
-                    <img src="assets/img/icon/about.svg" alt="">
-                </div>
-                <!-- section tittle -->
-                <div class="section-tittle section-tittle2 mb-55">
-                    <div class="front-text">
-                        <h2 class="">Learn new skills online with top educators</h2>
-                        <p>The automated process all your website tasks. Discover tools and 
-                            techniques to engage effectively with vulnerable children and young 
-                        people.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Techniques to engage effectively with vulnerable children and young people.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world  learning together.</p>
-                    </div>
-                </div>
-
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="right-content1">
-                <!-- img -->
-                <div class="right-img">
-                    <img src="assets/img/gallery/about.png" alt="">
-
-                    <div class="video-icon" >
-                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Area End -->
     <!--? top subjects Area Start -->
     <div class="topic-area section-padding40">
         <div class="container">
@@ -568,7 +512,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>Community experts</h2>
+                        <h2>BLOGGERS DE LA SEMANA</h2>
                     </div>
                 </div>
             </div>
