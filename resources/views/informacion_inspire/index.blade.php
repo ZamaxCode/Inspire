@@ -105,7 +105,7 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="{{asset('layout/img/gallery/figurativo.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/pintura.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
                             <p>ARTE FIGURATIVO NO REALISTA</p>
@@ -135,7 +135,7 @@
                 <div class="properties pb-20">
                     <div class="properties__card">
                         <div class="properties__img overlay1">
-                            <a href="#"><img src="{{asset('layout/img/gallery/abstracto.jpg')}}" alt=""></a>
+                            <a href="#"><img src="{{asset('layout/img/gallery/abstraccion.jpg')}}" alt=""></a>
                         </div>
                         <div class="properties__caption">
                             <p>ARTE ABSTRACTO</p>
@@ -260,7 +260,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>Explore top subjects</h2>
+                        <h2>OBSERVA NUESTRA GALERÍA</h2>
                     </div>
                 </div>
             </div>
@@ -268,10 +268,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic1.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura12.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -280,10 +280,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic2.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura16.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -292,10 +292,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic3.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura19.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -304,10 +304,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic4.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura25.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -316,10 +316,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic5.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura8.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -328,10 +328,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic6.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura15.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -340,10 +340,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic7.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura20.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -352,10 +352,154 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic8.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura14.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura18.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura25.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura23.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/realista.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura1.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura2.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura5.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura11.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura4.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura10.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura21.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="single-topic text-center mb-30">
+                        <div class="topic-img">
+                            <img src="{{asset('layout/img/gallery/pintura22.jpg')}}" alt="">
+                            <div class="topic-content-box">
+                                <div class="topic-content">
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
