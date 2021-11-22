@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return redirect('publicacion/');
+    return view('informacion_inspire.index');
 });
 
 Route::get('/informacion/courses', function () {

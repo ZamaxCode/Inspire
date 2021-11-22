@@ -10,7 +10,6 @@
                             <div class="hero__caption">
                                 <h1 data-animation="fadeInLeft" data-delay="0.2s">INSPIRE<br> Art Blog</h1>
                                 <p data-animation="fadeInLeft" data-delay="0.4s">"El arte no reproduce aquello que es visible, sino, que hace visible aquello que no siempre lo es."  -Paul Klee, 1920. <br> Inspire, es un BLog de Arte diseñado para todas las personas que comparten un cariño y aprecio por este. En este blog podrás encontrar diferentes tipos de arte con una gran variedad de técnicas, tamaños y texturas. <br> El lugar indicado para encontrar tu "Inspiración".</p>
-                                <a href="#" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s">Join for Free</a>
                             </div>
                         </div>
                     </div>
@@ -458,52 +457,7 @@
             </div>
         </div>
     </div>
-    <!-- top subjects End -->
-    <!--? About Area-3 Start -->
-    <section class="about-area3 fix">
-        <div class="support-wrapper align-items-center">
-            <div class="right-content3">
-                <!-- img -->
-                <div class="right-img">
-                    <img src="assets/img/gallery/about3.png" alt="">
-                </div>
-            </div>
-            <div class="left-content3">
-                <!-- section tittle -->
-                <div class="section-tittle section-tittle2 mb-20">
-                    <div class="front-text">
-                        <h2 class="">Learner outcomes on courses you will take</h2>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Techniques to engage effectively with vulnerable children and young people.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world
-                        learning together.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world learning together.
-                        Online learning is as easy and natural.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!-- About Area End -->
     <!--? Team -->
     <section class="team-area section-padding40 fix">
@@ -532,31 +486,6 @@
                     <div class="cat-cap">
                         <h5><a href="services.html">Alex Z.</a></h5>
                         <p>Contribuciones en Arte Impresionista y Pop Art.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services End -->
-    <!--? About Area-2 Start -->
-    <section class="about-area2 fix pb-padding">
-        <div class="support-wrapper align-items-center">
-            <div class="right-content2">
-                <!-- img -->
-                <div class="right-img">
-                    <img src="assets/img/gallery/about2.png" alt="">
-                </div>
-            </div>
-            <div class="left-content2">
-                <!-- section tittle -->
-                <div class="section-tittle section-tittle2 mb-20">
-                    <div class="front-text">
-                        <h2 class="">Take the next step
-                            toward your personal
-                            and professional goals
-                        with us.</h2>
-                        <p>The automated process all your website tasks. Discover tools and techniques to engage effectively with vulnerable children and young people.</p>
-                        <a href="#" class="btn">Join now for Free</a>
                     </div>
                 </div>
             </div>
