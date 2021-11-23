@@ -62,7 +62,7 @@
                                             <li><a href="{{route('publicacion.index')}}">Publicaciones</a></li>
                                             <li><a href="{{route('informacion.courses')}}">Tipos de Arte</a></li>
                                             <li><a href="{{route('informacion.about')}}">Sobre el Blog</a></li>
-                                            <li><a href="{{route('informacion.contact')}}">Contacto</a></li>
+                                            <li><a href="{{route('informacion.contact')}}">Servicios</a></li>
                                            
                                             @if (Route::has('login'))
                                                 
