@@ -63,7 +63,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>¡SELECCIONA EL ARTE QUE DESEAS CONOCER!</h2>
+                        <h2>¡CONOCE EL ARTE DE NUESTRO BLOG!</h2>
                     </div>
                 </div>
             </div>

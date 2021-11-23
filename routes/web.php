@@ -4,6 +4,8 @@ use App\Http\Controllers\ComentarioController;
 use App\Http\Controllers\PublicacionController;
 use App\Models\Categoria;
 use Illuminate\Support\Facades\Route;
+use Laravel\Socialite\Facades\Socialite;
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,3 +52,31 @@ Route::get('publicacion/categoria/{categoria}', function(Categoria $categoria){
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return redirect('publicacion/');
 })->name('dashboard');
+
+Route::get('/auth/github/redirect', function () {
+    return Socialite::driver('github')->redirect();
+});
+
+Route::get('/auth/github/callback', function () {
+    $githubUser = Socialite::driver('github')->user();
+
+    $user = User::firstOrCreate(
+        [
+            'provider_id' => $githubUser->getId()
+        ],
+        [
+            'email' => $githubUser->getEmail(),
+            'name' => $githubUser->getName(),
+            'password'=>Hash::make($githubUser->getName()),
+            'provider_id'=>$githubUser->getId(),
+        ]
+
+    );
+
+    auth()->login($user, true);
+
+    return redirect('/informacion/index');
+    
+});
+
+

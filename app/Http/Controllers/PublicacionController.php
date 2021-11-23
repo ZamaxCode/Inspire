@@ -55,7 +55,8 @@ class PublicacionController extends Controller
             'descripcion' => 'required|max:255',
             'explicacion' => 'required',
             'pais' => 'max:15',
-            'imagen_path' => 'required|image'
+            'imagen_path' => 'required|image',
+            'categorias_id' => 'required'
         ]);
 
         $imagen = time() . '-' . $request->titulo . '.' . $request->imagen_path->extension();
@@ -108,6 +109,7 @@ class PublicacionController extends Controller
             'descripcion' => 'required|max:255',
             'explicacion' => 'required',
             'pais' => 'max:15',
+            'categorias_id' => 'required'
         ]);
         if($request->imagen_path != '')
         {

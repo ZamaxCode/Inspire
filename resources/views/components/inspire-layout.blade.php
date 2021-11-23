@@ -67,12 +67,19 @@
                                             @if (Route::has('login'))
                                                 
                                                 @auth
-                                                    <li class="button-header"><a href="http://inspire.test/user/profile" class="btn btn3">Perfil</a></li>         
+                                                    <li class="button-header"><a href="http://inspire.test/user/profile" class="btn btn3">Perfil</a></li> 
+                                                    <li class="button-header margin-left">
+                                                        <a href="{{route('logout')}}" class="btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                                                        <form id="logout-form" method="POST" action="{{route('logout')}}">
+                                                            @csrf
+                                                        </form>
+                                                    </li>
+                                                          
                                                 @else
-                                                    <li class="button-header"><a href="{{ route('login') }}" class="btn btn3">Log in</a></li>
+                                                    <li class="button-header"><a href="{{ route('login') }}" class="btn btn3">Iniciar Sesión</a></li>
 
                                                     @if (Route::has('register'))
-                                                        <li class="button-header margin-left "><a href="{{ route('register') }}" class="btn">Join</a></li>
+                                                        <li class="button-header margin-left "><a href="{{ route('register') }}" class="btn">Entrar</a></li>
                                                     @endif
                                                 @endauth
                                                 
@@ -115,7 +122,7 @@
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                        <p>De parte de toda la comunidad de "Bloggers", esperamos que te haya gustado el contenido de la página y esperamos que puedas ser parte de ella. Apoyanos compartiendo y siguiendo el blog. </p>
                                     </div>
                                 </div>
                                 <!-- social -->
@@ -130,27 +137,13 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Our solutions</h4>
+                                <h4>Redes Sociales</h4>
                                 <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
-                        <div class="single-footer-caption mb-50">
-                            <div class="footer-tittle">
-                                <h4>Support</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
+                                    <li><a href="#">Instagram: inspire_official</a></li>
+                                    <li><a href="#">Facebook: inspire_official </a></li>
+                                    <li><a href="#">TikTok: @dalia.p.r</a></li>
+                                    <li><a href="#">Instagram: dal_pr03</a></li>
+                                    <li><a href="#">Instagram: alex_zm14</a></li>  
                                 </ul>
                             </div>
                         </div>
@@ -158,17 +151,16 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
-                                <h4>Company</h4>
-                                <ul>
-                                    <li><a href="#">Design & creatives</a></li>
-                                    <li><a href="#">Telecommunication</a></li>
-                                    <li><a href="#">Restaurant</a></li>
-                                    <li><a href="#">Programing</a></li>
-                                    <li><a href="#">Architecture</a></li>
-                                </ul>
+                                <h4>PayPal</h4>
+                                <p>Puedes apoyarnos con donaciones de Paypal en el siguiente botón :D </p>
+                                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                <input type="hidden" name="hosted_button_id" value="F8ULB7MXFPLGG" />
+                                <input type="image" src="https://www.paypalobjects.com/es_XC/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con el botón PayPal" />
+                                <img alt="" border="0" src="https://www.paypal.com/es_MX/i/scr/pixel.gif" width="1" height="1" />
+                                </form>
                             </div>
                         </div>
-                    </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -180,7 +172,7 @@
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los derechos reservados | Esta plantilla esta diseñada con <i class="fa fa-heart" aria-hidden="true"></i> por <a href="https://colorlib.com" target="_blank">Inspire Art Blog</a>
                                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                               </div>
                           </div>

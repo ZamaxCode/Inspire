@@ -7,11 +7,11 @@
                     <div class="row">
                         <div class="col-xl-8 col-lg-11 col-md-12">
                             <div class="hero__caption hero__caption2">
-                                <h1 data-animation="bounceIn" data-delay="0.2s">Publicaciones</h1>
+                                <h1 data-animation="bounceIn" data-delay="0.2s">PUBLICACIONES</h1>
                                 <!-- breadcrumb Start-->
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Inicio</a></li>
                                         <li class="breadcrumb-item"><a href="{{route('publicacion.index')}}">Publicaciones</a></li> 
                                     </ol>
                                 </nav>
@@ -40,7 +40,7 @@
                             </form>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget">
-                            <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+                            <h4 class="widget_title" style="color: #2d2d2d;">Categorías Disponibles</h4>
                             <ul class="list cat-list">
                                 <li>
                                     <a href="{{ route('publicacion.index') }}" class="d-flex">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 mb-5 mb-lg-0">
-                    <h1 style="font-size:50px">Mira que hay de nuevo</h1>
+                    <h1 style="font-size:50px">MIRA QUE HAY DE NUEVO</h1>
                     <div class="mt-20">
                         @for ($i = sizeof($publicaciones)-1; $i >= 0; $i--)
                             <article class="blog_item">
