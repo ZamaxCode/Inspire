@@ -14,7 +14,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Inicio</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Servicios</a></li> 
+                                        <li class="breadcrumb-item"><a href="{{route('publicacion.index')}}">Publicaciones</a></li> 
                                     </ol>
                                 </nav>
                                 <!-- breadcrumb End -->
@@ -74,7 +74,7 @@
                 <!-- section tittle -->
                 <div class="section-tittle section-tittle2 mb-55">
                     <div class="front-text">
-                        <h2 class="">UN POCO DE NOSOTROS</h2>
+                        <h2 class="">¡UN POCO DE NOSOTROS!</h2>
                         <p>Este pequeño pero muy útil Art Blog, se generó con fines de inspiración dedicado a personas de cualquier parte 
                         del mundo que quieran mostrarnos el arte que se vive en las diferentes ciudades o paises alrededor de este. <br>
                         Es un espacio libre para poder compartir sentimientos o emociones en tu día a día son una simple foto.<br>
@@ -127,7 +127,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>Explore top subjects</h2>
+                        <h2>¡GALERIA DE LOS DIFERENTES TIPOS DE ARTE!</h2>
                     </div>
                 </div>
             </div>

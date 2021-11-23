@@ -13,7 +13,7 @@
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Inicio</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Servicios</a></li> 
+                                        <li class="breadcrumb-item"><a href="{{route('publicacion.index')}}">Publicaciones</a></li> 
                                     </ol>
                                 </nav>
                                 <!-- breadcrumb End -->

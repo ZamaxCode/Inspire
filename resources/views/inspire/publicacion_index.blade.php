@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 mb-5 mb-lg-0">
-                    <h1 style="font-size:50px">MIRA QUE HAY DE NUEVO</h1>
+                    <h1 style="font-size:50px">¡MIRA QUE HAY DE NUEVO!</h1>
                     <div class="mt-20">
                         @for ($i = sizeof($publicaciones)-1; $i >= 0; $i--)
                             <article class="blog_item">

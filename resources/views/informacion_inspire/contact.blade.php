@@ -8,12 +8,12 @@
                     <div class="row">
                         <div class="col-xl-8 col-lg-11 col-md-12">
                             <div class="hero__caption hero__caption2">
-                                <h1 data-animation="bounceIn" data-delay="0.2s">Contact us</h1>
+                                <h1 data-animation="bounceIn" data-delay="0.2s">Contactanos</h1>
                                 <!-- breadcrumb Start-->
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Contact</a></li> 
+                                        <li class="breadcrumb-item"><a href="{{route('informacion.index')}}">Inicio</a></li>
+                                        <li class="breadcrumb-item"><a href="{{route('publicacion.index')}}">Publicaciones</a></li> 
                                     </ol>
                                 </nav>
                                 <!-- breadcrumb End -->
@@ -69,7 +69,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="contact-title">Get in Touch</h2>
+                    <h2 class="contact-title">¡ENVÍANOS UN MENSAJE!</h2>
                 </div>
                 <div class="col-lg-8">
                     <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <button type="submit" class="button button-contactForm boxed-btn">Enviar</button>
                         </div>
                     </form>
                 </div>

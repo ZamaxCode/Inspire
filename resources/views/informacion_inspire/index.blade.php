@@ -203,7 +203,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>OBSERVA NUESTRA GALERÍA</h2>
+                        <h2>¡OBSERVA NUESTRA GALERÍA!</h2>
                     </div>
                 </div>
             </div>
@@ -465,7 +465,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-7 col-lg-8">
                     <div class="section-tittle text-center mb-55">
-                        <h2>BLOGGERS DE LA SEMANA</h2>
+                        <h2>¡BLOGGERS DE LA SEMANA!</h2>
                     </div>
                 </div>
             </div>
