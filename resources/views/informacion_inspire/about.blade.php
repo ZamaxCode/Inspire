@@ -76,8 +76,10 @@
                     <div class="front-text">
                         <h2 class="">UN POCO DE NOSOTROS</h2>
                         <p>Este pequeño pero muy útil Art Blog, se generó con fines de inspiración dedicado a personas de cualquier parte 
-                        del mundo que quiera mostrarnos el arte que se vive en diferentes paises alrededor del mundo. <br>
-                         </p>
+                        del mundo que quieran mostrarnos el arte que se vive en las diferentes ciudades o paises alrededor de este. <br>
+                        Es un espacio libre para poder compartir sentimientos o emociones en tu día a día son una simple foto.<br>
+                        Este blog es apto para cualquier tipo de persona, ya que queremos que sea una comunidad de integración y buena comunicación 
+                        con acceso permitido para personas mayores a 15 años de edad. </p>
                     </div>
                 </div>
                 <div class="single-features">
@@ -85,7 +87,7 @@
                         <img src="assets/img/icon/right-icon.svg" alt="">
                     </div>
                     <div class="features-caption">
-                        <p>Techniques to engage effectively with vulnerable children and young people.</p>
+                        <p>Unete a tu nuestro blog creando un perfil en la plataforma.</p>
                     </div>
                 </div>
                 <div class="single-features">
@@ -93,7 +95,7 @@
                         <img src="assets/img/icon/right-icon.svg" alt="">
                     </div>
                     <div class="features-caption">
-                        <p>Join millions of people from around the world  learning together.</p>
+                        <p>Disfruta del contenido y comparte tu día a día con nosotros.</p>
                     </div>
                 </div>
 
@@ -102,17 +104,17 @@
                         <img src="assets/img/icon/right-icon.svg" alt="">
                     </div>
                     <div class="features-caption">
-                        <p>Join millions of people from around the world learning together. Online learning is as easy and natural.</p>
+                        <p>Te dejamos algunas ideas creativas que puedes utilizar dando click en el logo.</p>
                     </div>
                 </div>
             </div>
             <div class="right-content1">
                 <!-- img -->
                 <div class="right-img">
-                    <img src="assets/img/gallery/about.png" alt="">
+                    <img src="{{asset('layout/img/logo/logo5.png')}}" alt="">
 
                     <div class="video-icon" >
-                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0"><i class="fas fa-play"></i></a>
+                        <a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=3VCOvQibNsw"><i class="fas fa-play"></i></a>
                     </div>
                 </div>
             </div>
@@ -133,10 +135,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic1.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura26.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -145,10 +147,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic2.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura27.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -157,10 +159,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic3.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura28.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -169,10 +171,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic4.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura29.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -181,10 +183,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic5.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura30.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -193,10 +195,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic6.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura31.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -205,10 +207,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic7.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura32.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -217,10 +219,10 @@
                 <div class="col-lg-3 col-md-4 col-sm-6">
                     <div class="single-topic text-center mb-30">
                         <div class="topic-img">
-                            <img src="assets/img/gallery/topic8.png" alt="">
+                            <img src="{{asset('layout/img/gallery/pintura33.jpg')}}" alt="">
                             <div class="topic-content-box">
                                 <div class="topic-content">
-                                    <h3><a href="#">Programing</a></h3>
+                                    <h3><a href="#"></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -230,118 +232,11 @@
             <div class="row justify-content-center">
                 <div class="col-xl-12">
                     <div class="section-tittle text-center mt-20">
-                        <a href="courses.html" class="border-btn">View More Subjects</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- top subjects End -->
-    <!--? About Area-3 Start -->
-    <section class="about-area3 fix">
-        <div class="support-wrapper align-items-center">
-            <div class="right-content3">
-                <!-- img -->
-                <div class="right-img">
-                    <img src="assets/img/gallery/about3.png" alt="">
-                </div>
-            </div>
-            <div class="left-content3">
-                <!-- section tittle -->
-                <div class="section-tittle section-tittle2 mb-20">
-                    <div class="front-text">
-                        <h2 class="">Learner outcomes on courses you will take</h2>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Techniques to engage effectively with vulnerable children and young people.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world
-                        learning together.</p>
-                    </div>
-                </div>
-                <div class="single-features">
-                    <div class="features-icon">
-                        <img src="assets/img/icon/right-icon.svg" alt="">
-                    </div>
-                    <div class="features-caption">
-                        <p>Join millions of people from around the world learning together.
-                        Online learning is as easy and natural.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- About Area End -->
-    <!--? Team -->
-    <section class="team-area section-padding40 fix">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-7 col-lg-8">
-                    <div class="section-tittle text-center mb-55">
-                        <h2>Community experts</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="team-active">
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team1.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Urela</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team2.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Uttom</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team3.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Shakil</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team4.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. Arafat</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-                <div class="single-cat text-center">
-                    <div class="cat-icon">
-                        <img src="assets/img/gallery/team3.png" alt="">
-                    </div>
-                    <div class="cat-cap">
-                        <h5><a href="services.html">Mr. saiful</a></h5>
-                        <p>The automated process all your website tasks.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services End -->
 </x-inspire-layout>
   
