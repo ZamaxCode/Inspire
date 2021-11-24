@@ -70,6 +70,7 @@ Route::get('/auth/github/callback', function () {
             'name' => $githubUser->getName(),
             'password'=>Hash::make($githubUser->getName()),
             'provider_id'=>$githubUser->getId(),
+            'email_verified_at' => now(),
         ]
 
     );
