@@ -69,7 +69,7 @@
                                                 @auth
                                                     <li class="button-header"><a href="http://inspire.test/user/profile" class="btn btn3">Perfil</a></li> 
                                                     <li class="button-header margin-left">
-                                                        <a href="{{route('logout')}}" class="btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a></li>
+                                                        <a href="{{route('logout')}}" class="btn" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Cerrar Sesion</a></li>
                                                         <form id="logout-form" method="POST" action="{{route('logout')}}">
                                                             @csrf
                                                         </form>
@@ -124,12 +124,6 @@
                                     <div class="footer-pera">
                                         <p>De parte de toda la comunidad de "Bloggers", esperamos que te haya gustado el contenido de la página y esperamos que puedas ser parte de ella. Apoyanos compartiendo y siguiendo el blog. </p>
                                     </div>
-                                </div>
-                                <!-- social -->
-                                <div class="footer-social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                                 </div>
                             </div>
                         </div>

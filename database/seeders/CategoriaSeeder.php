@@ -15,6 +15,36 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        Categoria::factory(10)->create();
+        Categoria::create([
+            'categoria' => 'Arte Realista',
+            'descripcion' => ''
+        ]);
+
+        Categoria::create([
+            'categoria' => 'Arte Figurativo',
+            'descripcion' => ''
+        ]);
+
+        Categoria::create([
+            'categoria' => 'Arte Abstracto',
+            'descripcion' => ''
+        ]);
+
+        Categoria::create([
+            'categoria' => 'Arte Impresionista',
+            'descripcion' => ''
+        ]);
+
+        Categoria::create([
+            'categoria' => 'Pop art',
+            'descripcion' => ''
+        ]);
+
+        Categoria::create([
+            'categoria' => 'Hiperrealismo',
+            'descripcion' => ''
+        ]);
+
+        Categoria::factory(9)->create();
     }
 }

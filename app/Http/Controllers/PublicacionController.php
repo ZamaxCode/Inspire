@@ -113,10 +113,14 @@ class PublicacionController extends Controller
         ]);
         if($request->imagen_path != '')
         {
-            $imagen_old = "layout/img/publicaciones/" . $publicacion->imagen;
-            if(File::exists($imagen_old)) {
-                File::delete($imagen_old);
+            if($publicacion->imagen != "default.jpeg")
+            {
+                $imagen_old = "layout/img/publicaciones/" . $publicacion->imagen;
+                if(File::exists($imagen_old)) {
+                    File::delete($imagen_old);
+                }
             }
+            
 
             $imagen = time() . '-' . $request->titulo . '.' . $request->imagen_path->extension();
             $request->imagen_path->move(public_path('layout/img/publicaciones'), $imagen);
@@ -139,9 +143,12 @@ class PublicacionController extends Controller
      */
     public function destroy(Publicacion $publicacion)
     {
-        $imagen_path = "layout/img/publicaciones/" . $publicacion->imagen;
-        if(File::exists($imagen_path)) {
-            File::delete($imagen_path);
+        if($publicacion->imagen != "default.jpeg")
+        {
+            $imagen_path = "layout/img/publicaciones/" . $publicacion->imagen;
+            if(File::exists($imagen_path)) {
+                File::delete($imagen_path);
+            }
         }
         $publicacion->delete();
         return redirect()->route('publicacion.index')->with('msg', 'Publicacion eliminada');

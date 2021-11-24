@@ -31,80 +31,83 @@
                <h2 class="contact-title">¡ENCUENTRANOS EN NUESTRAS NUEVAS SUCURSALES!</h2>
             </div>
             <div class="properties pb-20">
-                    <div class="properties__card">
-                        <div class="properties__img overlay1">
-                            <a href="#"><img src="{{asset('layout/img/gallery/mascota.png')}}" alt=""></a>
-                        </div>
-                        <div class="properties__caption">
-                            <p>SUCURSAL MASCOTA JALISCO</p>
-                            <h3>Ubicada en el Museo el Pedregal<a href="#"></a></h3>
-                            <p>Dirección: Morelos 64, Centro, 46900 Mascota, Jal.
-                            </p>
-                            <div class="properties__footer d-flex justify-content-between align-items-center">
-                                <div class="restaurant-name">
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half"></i>
-                                    </div>
-                                    <p><span>(4.5)</span>Calificación del lugar.</p>
+                <div class="properties__card">
+                    <div class="properties__img overlay1">
+                        <a href="#"><img src="{{asset('layout/img/gallery/mascota.png')}}" alt=""></a>
+                    </div>
+                    <div class="properties__caption">
+                        <p>SUCURSAL MASCOTA JALISCO</p>
+                        <h3>Ubicada en el Museo el Pedregal<a href="#"></a></h3>
+                        <p>Dirección: Morelos 64, Centro, 46900 Mascota, Jal.
+                        </p>
+                        <div class="properties__footer d-flex justify-content-between align-items-center">
+                            <div class="restaurant-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
                                 </div>
+                                <p><span>(4.5)</span>Calificación del lugar.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="properties pb-20">
-                    <div class="properties__card">
-                        <div class="properties__img overlay1">
-                            <a href="#"><img src="{{asset('layout/img/gallery/vallarta.png')}}" alt=""></a>
-                        </div>
-                        <div class="properties__caption">
-                            <p>SUCURSAL PUERTO VALLARTA</p>
-                            <h3>ART Vallarta<a href="#"></a></h3>
-                            <p>Dirección: Pilitas 213, Zona Romántica, Amapas, 48333 Puerto Vallarta, Jal.
-                            </p>
-                            <div class="properties__footer d-flex justify-content-between align-items-center">
-                                <div class="restaurant-name">
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half"></i>
-                                    </div>
-                                    <p><span>(4.3)</span>Calificación del lugar.</p>
+            </div>
+            <hr>
+            <div class="properties pb-20">
+                <div class="properties__card">
+                    <div class="properties__img overlay1">
+                        <a href="#"><img src="{{asset('layout/img/gallery/vallarta.png')}}" alt=""></a>
+                    </div>
+                    <div class="properties__caption">
+                        <p>SUCURSAL PUERTO VALLARTA</p>
+                        <h3>ART Vallarta<a href="#"></a></h3>
+                        <p>Dirección: Pilitas 213, Zona Romántica, Amapas, 48333 Puerto Vallarta, Jal.
+                        </p>
+                        <div class="properties__footer d-flex justify-content-between align-items-center">
+                            <div class="restaurant-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half"></i>
                                 </div>
+                                <p><span>(4.3)</span>Calificación del lugar.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="properties pb-20">
-                    <div class="properties__card">
-                        <div class="properties__img overlay1">
-                            <a href="#"><img src="{{asset('layout/img/gallery/guadalajara.png')}}" alt=""></a>
-                        </div>
-                        <div class="properties__caption">
-                            <p>SUCURSAL GUADALAJARA JALISCO</p>
-                            <h3>Artx Fotografía<a href="#"></a></h3>
-                            <p>Dirección: Francisco I. Madero 1284, Agua Blanca Industrial, 45235 Zapopan, Jal.
-                            </p>
-                            <div class="properties__footer d-flex justify-content-between align-items-center">
-                                <div class="restaurant-name">
-                                    <div class="rating">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p><span>(5.0)</span>Calificación del lugar.</p>
+            </div>
+            <hr>
+            <div class="properties pb-20">
+                <div class="properties__card">
+                    <div class="properties__img overlay1">
+                        <a href="#"><img src="{{asset('layout/img/gallery/guadalajara.png')}}" alt=""></a>
+                    </div>
+                    <div class="properties__caption">
+                        <p>SUCURSAL GUADALAJARA JALISCO</p>
+                        <h3>Artx Fotografía<a href="#"></a></h3>
+                        <p>Dirección: Francisco I. Madero 1284, Agua Blanca Industrial, 45235 Zapopan, Jal.
+                        </p>
+                        <div class="properties__footer d-flex justify-content-between align-items-center">
+                            <div class="restaurant-name">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
                                 </div>
+                                <p><span>(5.0)</span>Calificación del lugar.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr>
             <div class="row">
                 <div class="col-">
                     <h2 class="contact-title">¡TE MOSTRAMOS NUESTROS PROXIMOS SERVICIOS QUE SERÁN IMPLEMENTADOS!</h2>
