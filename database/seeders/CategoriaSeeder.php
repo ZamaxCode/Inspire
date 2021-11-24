@@ -17,32 +17,32 @@ class CategoriaSeeder extends Seeder
     {
         Categoria::create([
             'categoria' => 'Arte Realista',
-            'descripcion' => ''
+            'descripcion' => 'Pintura que busca parecerse lo mas posible a la realidad.'
         ]);
 
         Categoria::create([
             'categoria' => 'Arte Figurativo',
-            'descripcion' => ''
+            'descripcion' => 'Pintura que intenta figurar o simular culquiero objeto visible.'
         ]);
 
         Categoria::create([
             'categoria' => 'Arte Abstracto',
-            'descripcion' => ''
+            'descripcion' => 'Arte que no representa objetos o cosas en concreto.'
         ]);
 
         Categoria::create([
             'categoria' => 'Arte Impresionista',
-            'descripcion' => ''
+            'descripcion' => 'Arte que se observa desde lejos para una mejor impresión.'
         ]);
 
         Categoria::create([
             'categoria' => 'Pop art',
-            'descripcion' => ''
+            'descripcion' => 'Tipo de arte moderno, surgió en la época de Marilyn Monroe.'
         ]);
 
         Categoria::create([
             'categoria' => 'Hiperrealismo',
-            'descripcion' => ''
+            'descripcion' => 'Arte que supera al realismo.'
         ]);
 
         Categoria::factory(9)->create();
